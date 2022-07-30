@@ -5,25 +5,27 @@ body {
   margin:0;
   padding:0;
   font-family: sans-serif;
+background-image: linear-gradient(330deg,  rgb(35, 35, 37), rgb(46, 47, 51), rgb(30, 28, 36));
 }
 
 .login-box {
   position: absolute;
   top: 50%;
   left: 76%;
-  width: 26vw;
-  padding: 20px;
+  width: 24vw;
+  padding: 15px;
   transform: translate(-50%, -50%);
-  background: rgb(91, 90, 90);
+  background-image: linear-gradient(160deg, rgb(22, 22, 22), rgb(16, 18, 16), rgb(68, 69, 68),rgb(21, 21, 22));
+
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
 }
 
-.login-box h4{
+.login-box h5{
   margin: 0 0 30px;
   padding: 0;
-  color: #fff;
+  color: rgb(254, 250, 250);
   text-align: center;
 }
 
@@ -35,10 +37,10 @@ body {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
-  margin-bottom: 17px;
+  color: rgb(254, 252, 252);
+  margin-bottom: 9px;
   border: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fac001;
   outline: none;
   background: transparent;
   text-decoration: none;
@@ -49,7 +51,7 @@ body {
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: white;
   pointer-events: none;
   transition: .3s;
 }
@@ -65,7 +67,7 @@ input[type=number]::-webkit-outer-spin-button {
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #fefefe;
+  color: #fbf9f9;
   font-size: 12px;
 }
 
@@ -73,20 +75,22 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
   display: inline-block;
   padding: 5px 10px;
-  color: black;
+  color: rgb(249, 246, 246);
   font-size: 20px;
   text-decoration: none;
   overflow: hidden;
   transition: 1.5s;
-  margin-top: 4%;
   letter-spacing: 2px;
-   background: rgb(242, 242, 247);
+   background: rgb(249, 4, 4);
   border-radius: 7px;
   border: none;
   margin-left: 32%;
 
 }
 
+#signerup{
+  margin-top: 3%;
+}
 
 
 .login-box a span {
@@ -106,5 +110,19 @@ input[type=number]::-webkit-outer-spin-button {
 #welcomeotoexpense{
     padding: 30px;
     margin-top: 10%;
-    color: rgb(4, 4, 235);
+    color: rgb(255, 255, 255);
+}
+
+
+#rtologin{
+
+  text-decoration: none;
+  right: 5%;
+  top: 5%;
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(8, 234, 95, 0.886);
+  color: #fefefe;
+  border-radius: 6px;
+  
 }

@@ -12,10 +12,13 @@
 <link rel="stylesheet" href="./signup.css">
 </head>
 <body>
+
+    <a href="../login/login.html" id="rtologin">Log In</a>
+
 <h3 id="welcomeotoexpense">
 
 
-    WELCOCME TO CHAT APP.
+    WELCOCME TO   CHAT APP.
 
     
 
@@ -28,35 +31,38 @@
 
     <div class="container">
 
-    <div class="login-box">         <h4 class="text-center">SIGN UP</h4>
+    <div class="login-box">         <h5 class="">Create a new account .Its quick and easy</h5>
 
   <form>
     <div class="user-box">
-      <input type="text" name="" required="">
+      <input type="text" name="" required="" id="name">
       <label>NAME</label>
     </div>
     <div class="user-box">
-      <input type="email" name="" required="">
+      <input type="email" name="" required="" id="email">
       <label>EMAIL</label>
     </div>
      <div class="user-box">
-      <input type="number" name="" required="">
+      <input type="number" name="" required="" id="phonenumber">
       <label>PHONE NUMBER</label>
     </div>
     <div class="user-box">
-      <input type="password" name="" required="">
+      <input type="password" name="" required="" id="pwd">
       <label>PASSWORD</label>
     </div>
    
     <button id="btnsubmit" class="">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+
       Sign Up
     </button>
+    <div id="signerup">    <a href="../login/login.html" style="text-decoration: none; color: rgb(247, 248, 249);"> Already have an account?</a>
+</div>
   </form>
 </div>
 </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+<script src="./signup.js"></script>
 </body>
 </html>
