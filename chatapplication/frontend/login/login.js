@@ -18,7 +18,7 @@ btnsubmit.addEventListener("click", (e) => {
     .then((result) => {
       if (result.data.msg == "login successful") {
         localStorage.setItem("token", result.data.token);
-        location.replace("../homepage/home.html");
+        location.replace("../chat/chat.html");
       }
     })
     .catch((err) => {

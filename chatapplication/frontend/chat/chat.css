@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.msgbar{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(240, 127, 5);
+    width: 100%;
+    padding: 7px;
+
+}
+.fa-message{
+    color: rgb(225, 227, 228);
+}
+#inptext{
+    width: 70%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: rgb(252, 253, 252);
+    border-radius: 6px;
+    font-weight: 500;
+}
+.sendmsg{
+    background-color: rgb(62, 61, 61);
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    color: rgb(4, 229, 4);
+    border: 1px solid white;
+    
+}
+#gchat{
+font-family: 'Satisfy', cursive;
+
+}
+
+.msgparent{
+}
