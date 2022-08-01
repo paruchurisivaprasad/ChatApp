@@ -24,7 +24,7 @@
 .sendmsg{
     background-color: rgb(62, 61, 61);
     border: none;
-    padding: 6px;
+    padding: 4px;
     border-radius: 5px;
     color: rgb(4, 229, 4);
     border: 1px solid white;
@@ -32,8 +32,12 @@
 }
 #gchat{
 font-family: 'Satisfy', cursive;
-
+color: rgb(2, 18, 247);
 }
 
 .msgparent{
+    margin-bottom: 80px;
+}
+.l{
+    background-color: rgb(230, 177, 144);
 }
