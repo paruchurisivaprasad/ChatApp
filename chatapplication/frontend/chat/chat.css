@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .msgbar{
     position: fixed;
@@ -7,6 +8,11 @@
     background-color: rgb(240, 127, 5);
     width: 100%;
     padding: 7px;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(232, 231, 231);
 
 }
 .fa-message{
@@ -38,6 +44,25 @@ color: rgb(2, 18, 247);
 .msgparent{
     margin-bottom: 80px;
 }
-.l{
-    background-color: rgb(230, 177, 144);
+
+#waytog{
+    margin-left: 5%;
+    text-decoration: none;
+    color: rgb(5, 181, 128);
+    font-size: 20px;
+}
+#welcomeuser{
+    color: rgba(9, 183, 231, 0.955);
+    
+}#headmsg{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    margin-inline: 1%;
+    
+}
+#signout{
+    color: red;
+    cursor: pointer;
+    
 }

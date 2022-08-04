@@ -3,6 +3,8 @@ let txt=document.querySelector('#inptext');
 let sendmsg=document.querySelector('.sendmsg');
 let allmsgs=document.querySelector('.messages');
 let token=localStorage.getItem('token');
+let signout=document.querySelector('#signout');
+let welc=document.querySelector('#welcomeuser');
 let nam='';
 axios.get('http://localhost:5555/user',{
       headers: { authorization: token },
@@ -10,6 +12,10 @@ axios.get('http://localhost:5555/user',{
     .then(result=>{
         nam+=result.data[0].name;
         console.log(nam);
+        welc.innerHTML=`Welcome ${result.data[0].name}`;
+    })
+    .catch(err=>{
+      console.log(err);
     })
 
 
@@ -45,7 +51,7 @@ sendmsg.addEventListener('click',(e)=>{
             console.log(result.data.result[i].username == nam);
             if(result.data.result[i].username==nam){
 res += `
-            <div class="p-2 indimsg " style="background:rgb(40,27, 31);border-bottom:1px dotted snow; color:lightgray; ">
+            <div class="p-2 indimsg " style="background:black;border-bottom:1px dotted snow; color:snow; border-radius:7px; ">
             <span style="margin-left:30%;" >you : 
         </span>
             <span>${result.data.result[i].msg}</span>
@@ -54,7 +60,7 @@ res += `
         }
             else{
           res += `
-            <div class="p-2 indimsg " style="background:rgb(8, 87,87); color:white; border-bottom:1px solid yellow; ">
+            <div class="p-2 indimsg " style="background:rgb(8, 87,87); color:snow; border-bottom:1px solid white; border-radius:6px; ">
             <span  >${result.data.result[i].username} : 
         </span>
             <span>${result.data.result[i].msg}</span>
@@ -72,3 +78,8 @@ res += `
 
 
 
+signout.addEventListener('click',()=>{
+
+  localStorage.clear();
+  location.replace('../login/login.html')
+})

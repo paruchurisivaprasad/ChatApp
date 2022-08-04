@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#signoutgrp{
+    
+    cursor: pointer;
+    color: rgb(240, 235, 236);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+.msgbar{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(28, 69, 182);
+    width: 100%;
+    padding: 7px;
+
+}
+#inptext{
+    width: 70%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: rgb(238, 244, 240);
+    border-radius: 6px;
+    font-weight: 500;
+}
+.sendmsg{
+    margin-left: 0.5%;
+    border: none;
+    padding: 4px;
+    border-radius: 5px;
+    color: rgb(237, 243, 237);
+    border: 1px solid rgb(243, 185, 229);
+    background-color: rgb(48, 57, 191);
+    
+}
+.fa-message{
+    color: rgb(225, 227, 228);
+}
+
+.listofgroups{
+border-right: 2px dashed rgb(235, 138, 1);
+border-bottom: 2px double rgb(248, 9, 9);
+border-left: 2px dotted rgb(15, 214, 55);
+border-top: 2px solid blue;
+position: absolute;
+top: 33%;
+left: 0%;
+width: 25%;
+background-color:whitesmoke;
+padding: 1%;
+}
+.list1{
+    border-bottom: 1px solid rgb(24, 25, 24);
+    padding-bottom: 10px;
+}
+.list2{
+        border-bottom: 1px solid rgb(24, 25, 24);
+    padding-bottom: 10px;
+
+
+}
+
+#headgrps{
+display: flex;  
+justify-content: space-between;
+  margin-left: 25%;
+  background-color:rgb(232, 91, 15);
+  padding: 6px;
+}
+
+#searchinp{
+  width: 30px;
+  box-sizing: border-box;
+  border: 2px solid rgb(232, 91, 19) ;
+  
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: rgb(232, 227, 225);
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  padding: 4px;
+  cursor: pointer;
+
+}
+
+#searchinp:focus {
+  width: 40%;
+  background-color: white;
+  cursor: auto;
+  color: black;
+}
+.grpheading{
+font-family: 'Satisfy', cursive;
+padding: 5px;
+color: blue;
+border-bottom: 1px solid black;
+
+}
+
+.groupmsgs{
+        margin-left: 25%;
+border-left: 1px solid rgb(15, 201, 83);
+border-right: 1px solid rgb(7, 7, 209);
+
+}
+
+#addtogroup{
+    border: none;
+    background-color: rgb(7, 8, 7);
+    padding: 8px;
+    margin-top: 12px ;
+    color: white;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+.addform{
+    background-color:rgb(195, 17, 56);
+    padding: 1%;
+    display: grid;
+    place-items: center;
+    
+
+}
+
+.addpeople{
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 25%;
+
+}
+#adminvalue{
+    margin-top: 10px;
+}
+
+.groupmessages{
+
+    margin-bottom: 100px;
+
+}
